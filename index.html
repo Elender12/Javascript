@@ -1,0 +1,52 @@
+<!--Página principal desde la cual se accede a las otras funcionalidades
+Alumno: Cirstea Elena
+Curso: DAW2-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Gimnasio X</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="password.js" defer></script>
+	<script type="text/javascript" src="usuarioWeb.js" defer></script>
+</head>
+
+<body>
+	<form>
+		<!-- Los usuarios se pueden cargar en archivo o en arrays -->
+		<label>Nombre del archivo: </label>
+		<input type="file" id="archivo" onchange="abrirArchivo(this.files);">
+	</form>
+	<script defer src="usuarios.js"></script>
+	<h1>Gimnasio X => seguimos gastándonos demasiado dinero en esta página :)</h1>
+	<!-- <img src="https://www.planetawrestling.com/wp-content/uploads/the-rock.jpg" width="400" height="300"> -->
+
+
+	<!-- Apartado login de cualquier usuario-->
+	<h3>LOG IN </h3>
+	<form action="submit" name="login">
+		<input type="text" id="usuario" placeholder="user">
+		<input type="password" id="password" placeholder="password">
+		<!-- <input value="Entrar" target="_parent" onclick="login();" type="button" class="boton">  -->
+		<button type="button" onclick="loginUsuario();">Verificar</button>
+		<pre></pre>
+		<!-- <a href="indexGestor.html"><button type="button" onclick="verificarUsuario();" >Verificar</button></a> -->
+		<!-- según el usuario tiene que cargar una página u otra-->
+	</form>
+	<h3>REGISTER</h3>
+	<form action="submit" name="submit">
+		<input type="text" id="usuario" placeholder="user">
+		<pre></pre>
+		<input type="password" id="password" placeholder="password">
+		<pre></pre>
+		<input type="text" id="nombre" placeholder="Nombre">
+		<pre></pre>
+		<input type="text" id="dni" placeholder="DNI">
+		<pre></pre>
+		<button type="button" onclick="crearUsuario();">Registrarse</button>
+
+	</form>
+
+</body>
+
+</html>

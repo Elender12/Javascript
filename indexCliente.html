@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gimnasio X: Área cliente</title>
+	<meta charset="utf-8">
+    <script type="text/javascript" src="usuarioWeb.js" defer></script>
+    <script type="text/javascript" src="calcularFrecuencia.js" defer></script>
+    <script type="text/javascript" src="calcularIMC.js" defer></script>
+</head>
+<body>
+    <h3>Bienvenido</h3>
+<h3>Datos personales:</h3>
+<form action="submit">
+<label>Datos para calcular tu IMC:</label>
+<pre></pre>
+<label>Peso:</label>
+<input type="text" placeholder="peso" id="peso">
+<pre></pre>
+<label>Altura:</label>
+<input type="text" placeholder="altura en cm" id="altura">
+<pre></pre>
+<button type="button" onclick="calcularIMC();" id="calcIMC">Calcular IMC</button>
+<pre></pre>
+<label>Datos para calcular tu FCM: </label>
+<pre></pre>
+<label>Edad:</label>
+<input type="text" placeholder="edad" id="edad">
+<pre></pre>
+<label>Sexo:</label>
+<input type="text" placeholder="hombre/mujer" id="sexo">
+<pre></pre>
+<button type="button" onclick="mostrarFrecuencia();">Calcular FCM</button>
+		<div id="resulFCM">
+			<h4>Resultado:</h4>
+		</div>
+    </form>
+    <table id="tabla">
+			<tr>
+				<th id="indice">Índice: </th>
+			</tr>
+			<tr>
+				<td id="delSev"> &lt;16.00: Infrapeso (delgadez severa)</td>
+			</tr>
+			<tr>
+				<td id="delMod"> 16.00 – 16.99: Infrapeso (delgadez moderada)</td>
+			</tr>
+			<tr>
+				<td id="infra">17.00 - 18.49: Infrapeso (delgadez aceptable)</td>
+
+			</tr>
+			<tr>
+				<td id="normal">18.50 - 24.99: Peso normal</td>
+			</tr>
+			<tr>
+				<td id="sobre">25.00 - 29.99: Sobrepeso</td>
+			</tr>
+			<tr>
+				<td id="obeso1">30.00 - 34.99: Obeso (Tipo I) </td>
+			</tr>
+			<tr>
+				<td id="obeso2">35.00 - 40.00: Obeso (Tipo II)</td>
+			</tr>
+			<tr>
+				<td id="obeso3">&gt;40.00:Obeso (Tipo III) </td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+</html>

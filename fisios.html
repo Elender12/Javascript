@@ -1,0 +1,56 @@
+<!-- Página que muestra una tabla aleatoria con los horarios de los fisioterapeutas
+Alumno: Cirstea Elena
+Curso: DAW2
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Fisioterapeutas</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="fisio.js" defer></script>
+    <style>
+        table,
+        th,
+        td,
+        tr {
+            border: 2px solid black;
+            width: 800px;
+            text-align: center;
+            padding: 10px;
+            width: 800px;
+        }
+
+        h1 {
+            border: 2px solid darkblue;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Horario de los fisioterapeutas</h1>
+    <h4> Click para ver el horario general: </h4>
+    <fieldset>
+        <button type="button" onclick="tablaFisio();">Horario semanal fisioterapeutas</button>
+    </fieldset>
+    <h4>Selecciona un fisioterapeuta para ver su horario*: </h4>
+    <p>*primero debes visualizar la tabla de los horarios para poder seleccionar un fisioterapeuta.</p>
+    <form action="">
+        <fieldset>
+            <input type="radio" name="fisio" value="María Perez" onclick="seleccionaFisio();"> María Perez<br>
+            <input type="radio" name="fisio" value="Miguel Lorenzo" onclick="seleccionaFisio();">Miguel Lorenzo<br>
+            <input type="radio" name="fisio" value="Denís Valle" onclick="seleccionaFisio();"> Denís Valle <br>
+            <input type="radio" name="fisio" value="Sara Lorden" onclick="seleccionaFisio();"> Sara Lorden <br>
+            <input type="radio" name="fisio" value="Ana Mercedes" onclick="seleccionaFisio();"> Ana Mercedes<br>
+            <input type="radio" name="fisio" value="Romualdo Ramíres" onclick="seleccionaFisio();"> Romualdo
+            Ramíres<br>
+            <input type="radio" name="fisio" value="Mandingo García" onclick="seleccionaFisio();"> Mandingo
+            García<br>
+        </fieldset>
+    </form>
+    <p> <a href="index.html">Volver a la página principal</a></p>
+</body>
+
+</html>

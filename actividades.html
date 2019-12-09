@@ -1,0 +1,69 @@
+<!-- Página que muestra una tabla aleatoria con los horarios de las actividades
+y permite seleccionar varias para verlas en la tabla
+
+Alumno: Cirstea Elena
+Curso: DAW2
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Actividades</title>
+    <script type="text/javascript" src="horario.js" defer></script>
+    <meta charset="utf-8">
+    <!-- Estilos -->
+    <style>
+        table,
+        th,
+        td,
+        tr {
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+
+        }
+
+        h1 {
+            border: 2px solid darkred;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Actividades del gimnasio</h1>
+    <h4>Para ver el horario de las actividades pulsa el botón: </h4>
+    <fieldset>
+        <button type="button" onclick="tablaActividades();">Horario actividades</button>
+    </fieldset>
+    <h4>Selecciona varias actividades*</h4>
+    <p>*primero debes visualizar la tabla de los horarios para poder seleccionar varias actividades.</p>
+    <!-- Lista de actividades para que el usuario elija -->
+    <form action="">
+        <fieldset>
+            <input type="checkbox" name="lista_actividades" value="Pilates" onclick="seleccionaActividad();">Pilates<br>
+            <input type="checkbox" name="lista_actividades" value="TRX" onclick="seleccionaActividad();">TRX<br>
+            <input type="checkbox" name="lista_actividades" value="BodyFitness"
+                onclick="seleccionaActividad();">BodyFitness<br>
+            <input type="checkbox" name="lista_actividades" value="Zumba" onclick="seleccionaActividad();">Zumba<br>
+            <input type="checkbox" name="lista_actividades" value="GAP" onclick="seleccionaActividad();">GAP<br>
+            <input type="checkbox" name="lista_actividades" value="Yoga" onclick="seleccionaActividad();">Yoga<br>
+            <input type="checkbox" name="lista_actividades" value="Cardio" onclick="seleccionaActividad();">Cardio<br>
+            <input type="checkbox" name="lista_actividades" value="Spinning"
+                onclick="seleccionaActividad();">Spinning<br>
+            <input type="checkbox" name="lista_actividades" value="Circuito Indoor"
+                onclick="seleccionaActividad();">Circuito Indoor<br>
+            <input type="checkbox" name="lista_actividades" value="Streching"
+                onclick="seleccionaActividad();">Streching<br>
+            <input type="checkbox" name="lista_actividades" value="Pop-Dance"
+                onclick="seleccionaActividad();">Pop-Dance<br>
+            <input type="checkbox" name="lista_actividades" value="Kangoo-Jumps"
+                onclick="seleccionaActividad();">Kangoo-Jumps<br>
+            <br>
+        </fieldset>
+    </form>
+    <p> <a href="index.html">Volver a la página principal</a></p>
+</body>
+
+</html>

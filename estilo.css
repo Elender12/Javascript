@@ -1,0 +1,17 @@
+#datos {
+    border: 1px solid black;
+    width: 450px;
+    height: 120px;
+    padding: 5px;
+    margin-bottom: 5px;;
+}
+#ejer1{
+    width: 450px;
+    padding-bottom: 20px;
+}
+#ejer2{
+    padding: 10px;
+    width: 800px;
+    border: 1px solid black;
+}
+

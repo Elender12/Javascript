@@ -1,0 +1,92 @@
+<!-- Página que presenta las dos calculadoras: IMC y FCMax.
+Alumno: Cirstea Elena
+Curso: DAW2-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Calculadoras</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="calcularIMC.js" defer></script>
+	<script type="text/javascript" src="calcularFrecuencia.js" defer></script>
+
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<style>
+		table,
+		th,
+		td,
+		tr {
+			border: 1px solid black;
+			width: 400px;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Calculadoras</h1>
+	<!-- Pido datos al usuario para calcular su IMC -->
+	<div id="ejer1">
+		<h4>Para calcular tu IMC, rellena las siguientes casillas:</h4>
+		<div id="datos">
+			<br />
+			<label>Altura:</label>
+			<input type="text" id="altura" placeholder="altura">
+			<pre></pre>
+			<label>Peso:</label>
+			<input type="text" id="peso" placeholder="peso">
+			<pre></pre>
+			<button type="button" onclick="calcularIMC();" id="calcIMC">Calcular IMC</button>
+		</div>
+		<!-- <table style="width:100%"> -->
+		<table id="tabla">
+			<tr>
+				<th id="indice">Índice: </th>
+			</tr>
+			<tr>
+				<td id="delSev"> &lt;16.00: Infrapeso (delgadez severa)</td>
+			</tr>
+			<tr>
+				<td id="delMod"> 16.00 – 16.99: Infrapeso (delgadez moderada)</td>
+			</tr>
+			<tr>
+				<td id="infra">17.00 - 18.49: Infrapeso (delgadez aceptable)</td>
+
+			</tr>
+			<tr>
+				<td id="normal">18.50 - 24.99: Peso normal</td>
+			</tr>
+			<tr>
+				<td id="sobre">25.00 - 29.99: Sobrepeso</td>
+			</tr>
+			<tr>
+				<td id="obeso1">30.00 - 34.99: Obeso (Tipo I) </td>
+			</tr>
+			<tr>
+				<td id="obeso2">35.00 - 40.00: Obeso (Tipo II)</td>
+			</tr>
+			<tr>
+				<td id="obeso3">&gt;40.00:Obeso (Tipo III) </td>
+			</tr>
+		</table>
+	</div>
+
+	<a href="index2.html"></a></p>
+
+	<!-- Pido al usuario los datos correspondientes -->
+	<h4>Para ver los datos correspondientes a tu FCM, rellena los siguiente datos: </h4>
+	<div id="ejer2">
+		Edad: <input type="text" id="edad" placeholder="edad">
+		Sexo: <input type="text" id="sexo" placeholder="sexo">
+		<!-- Muestro los resultados al usuario -->
+		<button type="button" onclick="mostrarFrecuencia();">Calcular FCM</button>
+		<div id="resulFCM">
+			<h4>Resultado:</h4>
+		</div>
+	</div>
+
+	<p> <a href="index.html">Volver a la página principal</a></p>
+</body>
+
+</html>
